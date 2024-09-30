@@ -16,17 +16,17 @@ int main(void)
     if (prezzoUnitario < 10)
     {
         prezzoScontato = prezzoUnitario;
-        printf("Lo sconto applicato è del 0%%");
+        printf("Lo sconto applicato è del 0%%\n");
     }
     else if(prezzoUnitario >= 10 && prezzoUnitario <= 49)
     {
         prezzoScontato = prezzoUnitario - (prezzoUnitario/100)*10;
-        printf("Lo sconto applicato è del %d%%", sconto10);
+        printf("Lo sconto applicato è del %d%%\n", sconto10);
     }
     else if(prezzoUnitario >= 50)
     {
         prezzoScontato = prezzoUnitario - (prezzoUnitario/100)*20;
-        printf("Lo sconto applicato è del %d%%", sconto20);
+        printf("Lo sconto applicato è del %d%%\n", sconto20);
     }
 
     printf("L'importo totale è %.02f\n", prezzoScontato);
